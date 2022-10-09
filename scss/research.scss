@@ -1,0 +1,54 @@
+.fa-map-marker-alt {
+
+    padding: 11px 15px 12px 15px;
+
+}
+
+.ville {
+    font-weight: bold;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+.form {
+    background-color: #eaeaea;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Shrikhand', sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 30px 30px 0px 30px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight:lighter;
+}
+
+.sub-part1 {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+button {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, $color-secondary, $color-primary);
+    padding: 15px 20px;
+    border: none;
+    color: white;
+}

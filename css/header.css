@@ -1,0 +1,13 @@
+.logo-baniere {
+  margin: 20px 20px;
+  height: 40px;
+  align-self: center;
+}
+
+header {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}/*# sourceMappingURL=header.css.map */
