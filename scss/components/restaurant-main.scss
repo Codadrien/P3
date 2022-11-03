@@ -1,3 +1,6 @@
+@import "../vars/variables.scss";
+@import "../vars/mixin.scss";
+
 main {
     margin-bottom: -72px;
 }
@@ -16,7 +19,7 @@ main {
 .title2 {
     text-transform: uppercase;
     font-size: 20px;
-    border-bottom: 4px solid #99e2d0;
+    border-bottom: 4px solid $tertiary;
     width: 52px;
     margin-left: -1px;
 }
@@ -24,7 +27,7 @@ main {
 .part1 {
     border-radius: 35px 35px 0 0;
     position: relative;
-    background: #f6f6f6;
+    background: $grey;
     top: -72px;
 }
 
@@ -39,6 +42,9 @@ main {
 .accompagnement {
     font-size: 14px;
     font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .prix {
@@ -57,7 +63,7 @@ button {
     margin-top: 5px;
     margin: 30px 0 60px 0;
     border-radius: 25px;
-    background: linear-gradient(to bottom, $color-secondary, $color-primary);
+    background: linear-gradient(to bottom, $secondary, $primary);
     padding: 15px 47px;
     border: none;
     color: white;
@@ -78,14 +84,28 @@ button {
     font-weight: 600;
     position: relative;
     line-height: 25px;
+    opacity: 0;
+}
 
-    &:hover {
-        background-color: #f5edff;
+.menu .card .card__container:nth-child(1n+0):hover .card__container--animation {
+    background-color: #97dac1;
+    transform: scale(3, 1);
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .icon-functioning {
-            color: $color-primary;
-        }
-    }
+.fa-check-circle {
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 100%;
+    color: #99E2D0;
+    padding: 5px;
+    font-size: 120%;
+    z-index: 2;
 }
 
 .icon-functioning {
@@ -94,47 +114,9 @@ button {
 }
 
 .part3 {
-    background-color: #f6f6f6;
+    background-color: $grey;
     padding-bottom: 50px;
     padding-top: 20px;
-}
-
-.card-restaurant {
-    margin: 10px 20px;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 12px;
-    position: relative;
-
-    .card-nouveau-off {
-        display: none;
-    }
-}
-
-.card-restaurant-nouveau {
-    margin: 10px 20px;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 12px;
-    position: relative;
-}
-
-.card-image {
-    width: 100%;
-    height: 185px;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-}
-
-.card-nouveau {
-    position: absolute;
-    bottom: 222px;
-    right: 15px;
-    background-color: #99e2d0;
-    color: #0e8f6f;
-    font-size: 12px;
-    padding: 6px 10px 3px 10px;
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 12px;
-    border-radius: 2px 2px 2px 2px;
-    font-weight: 500;
 }
 
 .card-text {
@@ -161,19 +143,80 @@ button {
 
 .card-coeur {
     position: absolute;
-    right: 16px;
+    right: -40px;
     top: 3px;
     font-size: 30px;
+    position: relative;
 
+    .fa-heart-empty {
+        transition: opacity 250ms;
+    }
 
-    &:hover {
-        .fa-heart-full {
-            display: block;
-            color: $color-primary;
-        }
-
+    &:focus {
         .fa-heart-empty {
-            display: none;
+            opacity: 0;
         }
+
+        .fa-heart-full {
+            opacity: 1;
+            z-index: 3;
+        }
+
+    }
+
+    .fa-heart-full {
+        display: block;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 250ms;
+    }
+}
+
+.card-functioning {
+    animation: here-is-the-menu 1s;
+    animation-fill-mode: forwards;
+
+    &.delayB {
+        animation-delay: 0.2s;
+    }
+
+    &.delayC {
+        animation-delay: 0.4s;
+    }
+
+    &.delayD {
+        animation-delay: 0.6s;
+    }
+
+}
+
+@keyframes here-is-the-menu {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: .25;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }

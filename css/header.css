@@ -9,12 +9,13 @@
 
 .logo-baniere {
   height: 35px;
-  position: absolute;
 }
 
 .fa-arrow-left {
   position: relative;
   font-size: 22px;
+  left: -80px;
+  bottom: -7px;
 }
 
 .header-image {
@@ -23,13 +24,4 @@
   z-index: -10;
   display: block;
   object-fit: cover;
-}
-
-header a {
-  position: relative;
-  height: 22px;
-  width: 22px;
-  padding: 5px;
-  right: 175px;
-  bottom: 0px;
 }/*# sourceMappingURL=header.css.map */

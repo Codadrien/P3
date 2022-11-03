@@ -23,12 +23,13 @@ a {
 
 .logo-baniere {
   height: 35px;
-  position: absolute;
 }
 
 .fa-arrow-left {
   position: relative;
   font-size: 22px;
+  left: -80px;
+  bottom: -7px;
 }
 
 .header-image {
@@ -37,15 +38,6 @@ a {
   z-index: -10;
   display: block;
   object-fit: cover;
-}
-
-header a {
-  position: relative;
-  height: 22px;
-  width: 22px;
-  padding: 5px;
-  right: 175px;
-  bottom: 0px;
 }
 
 main {
@@ -66,7 +58,7 @@ main {
 .title2 {
   text-transform: uppercase;
   font-size: 20px;
-  border-bottom: 4px solid #99e2d0;
+  border-bottom: 4px solid #99E2D0;
   width: 52px;
   margin-left: -1px;
 }
@@ -89,6 +81,9 @@ main {
 .accompagnement {
   font-size: 14px;
   font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .prix {
@@ -128,12 +123,28 @@ button {
   font-weight: 600;
   position: relative;
   line-height: 25px;
+  opacity: 0;
 }
-.card-functioning:hover {
-  background-color: #f5edff;
+
+.menu .card .card__container:nth-child(1n+0):hover .card__container--animation {
+  background-color: #97dac1;
+  transform: scale(3, 1);
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.card-functioning:hover .icon-functioning {
-  color: #9356DC;
+
+.fa-check-circle {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-radius: 100%;
+  color: #99E2D0;
+  padding: 5px;
+  font-size: 120%;
+  z-index: 2;
 }
 
 .icon-functioning {
@@ -145,43 +156,6 @@ button {
   background-color: #f6f6f6;
   padding-bottom: 50px;
   padding-top: 20px;
-}
-
-.card-restaurant {
-  margin: 10px 20px;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 12px;
-  position: relative;
-}
-.card-restaurant .card-nouveau-off {
-  display: none;
-}
-
-.card-restaurant-nouveau {
-  margin: 10px 20px;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 12px;
-  position: relative;
-}
-
-.card-image {
-  width: 100%;
-  height: 185px;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-}
-
-.card-nouveau {
-  position: absolute;
-  bottom: 222px;
-  right: 15px;
-  background-color: #99e2d0;
-  color: #0e8f6f;
-  font-size: 12px;
-  padding: 6px 10px 3px 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 12px;
-  border-radius: 2px 2px 2px 2px;
-  font-weight: 500;
 }
 
 .card-text {
@@ -208,18 +182,68 @@ button {
 
 .card-coeur {
   position: absolute;
-  right: 16px;
+  right: -40px;
   top: 3px;
   font-size: 30px;
+  position: relative;
 }
-.card-coeur:hover .fa-heart-full {
+.card-coeur .fa-heart-empty {
+  transition: opacity 250ms;
+}
+.card-coeur:focus .fa-heart-empty {
+  opacity: 0;
+}
+.card-coeur:focus .fa-heart-full {
+  opacity: 1;
+  z-index: 3;
+}
+.card-coeur .fa-heart-full {
   display: block;
-  color: #9356DC;
-}
-.card-coeur:hover .fa-heart-empty {
-  display: none;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 250ms;
 }
 
+.card-functioning {
+  animation: here-is-the-menu 1s;
+  animation-fill-mode: forwards;
+}
+.card-functioning.delayB {
+  animation-delay: 0.2s;
+}
+.card-functioning.delayC {
+  animation-delay: 0.4s;
+}
+.card-functioning.delayD {
+  animation-delay: 0.6s;
+}
+
+@keyframes here-is-the-menu {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 footer {
   display: flex;
   flex-direction: column;

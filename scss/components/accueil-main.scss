@@ -1,5 +1,5 @@
 .part3 {
-    background-color: #f6f6f6;
+    background-color: $grey;
     padding-bottom: 50px;
     padding-top: 20px;
 }
@@ -33,7 +33,7 @@
     position: absolute;
     bottom: 222px;
     right: 15px;
-    background-color: #99e2d0;
+    background-color: $tertiary;
     color: #0e8f6f;
     font-size: 12px;
     padding: 6px 10px 3px 10px;
@@ -73,7 +73,9 @@
     &:hover {
         .fa-heart-full {
             display: block;
-            color: $color-primary;
+            background: $gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .fa-heart-empty {
