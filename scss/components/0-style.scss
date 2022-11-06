@@ -1,0 +1,33 @@
+@import "../vars/variables.scss";
+
+//Élements commun à toutes les pages
+
+body {
+    font-family: roboto;
+}
+
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: #000000;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+}
