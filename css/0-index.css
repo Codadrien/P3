@@ -265,7 +265,7 @@ footer {
   align-items: flex-start;
   background-color: #353535;
   padding-left: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 footer .bold {
   font-weight: 400;
@@ -298,4 +298,32 @@ footer a {
 
 .ajust {
   margin-left: -2px;
+}
+
+@media (min-width: 992px) {
+  .fonctionnement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 2%;
+  }
+  .card-functioning {
+    width: 22%;
+  }
+  .title1 {
+    margin: 0;
+  }
+  .accueil-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .breakpoint {
+    display: flex;
+  }
+  .restaurant {
+    width: 25%;
+  }
+  .title-breakpoint {
+    margin-left: 25px;
+  }
 }/*# sourceMappingURL=0-index.css.map */

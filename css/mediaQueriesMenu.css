@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+  .breakpoint-menu {
+    display: flex;
+  }
+  .menu-section {
+    margin: 0px 20px;
+    width: 30%;
+  }
+}/*# sourceMappingURL=mediaQueriesMenu.css.map */
