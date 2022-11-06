@@ -1,7 +1,7 @@
 @media (min-width: 992px) {
     .fonctionnement {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         margin: 0px 2%;
     }
@@ -15,6 +15,7 @@
     }
 
     .accueil-main {
+        padding-top: 30px;
         display: flex;
         flex-direction: column;
     }

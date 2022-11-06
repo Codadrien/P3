@@ -1,0 +1,80 @@
+.accueil-main {
+  background-color: #f6f6f6;
+  padding-top: 10px;
+  margin-top: 56px;
+}
+
+.card-restaurant {
+  margin: 20px 20px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 12px;
+  position: relative;
+}
+.card-restaurant .card-nouveau-off {
+  display: none;
+}
+
+.card-restaurant-nouveau {
+  margin: 20px 20px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 12px;
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: 185px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.card-nouveau {
+  position: absolute;
+  bottom: 222px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #0e8f6f;
+  font-size: 12px;
+  padding: 6px 10px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 12px;
+  border-radius: 2px 2px 2px 2px;
+  font-weight: 500;
+}
+
+.card-text {
+  margin-left: 12px;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.card-subtitle {
+  margin-top: 5px;
+  padding-bottom: 14px;
+}
+
+.fa-heart-empty {
+  color: #777777;
+}
+
+.fa-heart-full {
+  display: none;
+}
+
+.card-coeur {
+  position: absolute;
+  right: 15px;
+  top: 216px;
+  font-size: 24px;
+}
+.card-coeur:hover .fa-heart-full {
+  display: block;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-coeur:hover .fa-heart-empty {
+  display: none;
+}/*# sourceMappingURL=3-accueil-main.css.map */

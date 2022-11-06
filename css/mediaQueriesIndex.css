@@ -1,0 +1,28 @@
+@media (min-width: 992px) {
+  .fonctionnement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 2%;
+  }
+  .card-functioning {
+    width: 22%;
+  }
+  .title1 {
+    margin: 0;
+  }
+  .accueil-main {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .breakpoint {
+    display: flex;
+  }
+  .restaurant {
+    width: 25%;
+  }
+  .title-breakpoint {
+    margin-left: 25px;
+  }
+}/*# sourceMappingURL=mediaQueriesIndex.css.map */

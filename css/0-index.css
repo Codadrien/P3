@@ -184,6 +184,12 @@ button:hover {
   font-weight: 400;
 }
 
+.accueil-main {
+  background-color: #f6f6f6;
+  padding-top: 10px;
+  margin-top: 56px;
+}
+
 .card-restaurant {
   margin: 20px 20px;
   border-radius: 15px 15px 15px 15px;
@@ -303,7 +309,7 @@ footer a {
 @media (min-width: 992px) {
   .fonctionnement {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0px 2%;
   }
@@ -314,6 +320,7 @@ footer a {
     margin: 0;
   }
   .accueil-main {
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
   }
