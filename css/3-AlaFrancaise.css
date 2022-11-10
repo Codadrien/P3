@@ -68,7 +68,7 @@ h2 {
   padding: 25px 22px 0 22px;
 }
 
-.title1 {
+h1 {
   display: flex;
   position: relative;
   font-family: Shrikhand;
@@ -86,10 +86,9 @@ h2 {
 
 .card-coeur {
   position: absolute;
-  right: -40px;
-  top: 3px;
+  right: 56px;
+  top: 44px;
   font-size: 30px;
-  position: relative;
 }
 .card-coeur .fa-heart-empty {
   transition: opacity 250ms;
@@ -113,13 +112,14 @@ h2 {
   left: 0;
   opacity: 0;
   transition: opacity 250ms;
+  cursor: pointer;
 }
 
 .menu-section {
   margin-top: 40px;
 }
 
-.title2 {
+h2 {
   text-transform: uppercase;
   font-size: 20px;
   border-bottom: 4px solid #99E2D0;
@@ -303,5 +303,17 @@ footer a {
   .menu-section {
     margin: 0px 20px;
     width: 30%;
+  }
+}
+@media (max-width: 390px) {
+  .fa-arrow-left {
+    left: -18px;
+  }
+  .card-coeur {
+    top: 108px;
+  }
+  h1 {
+    font-size: 26px;
+    white-space: nowrap;
   }
 }/*# sourceMappingURL=3-AlaFrancaise.css.map */

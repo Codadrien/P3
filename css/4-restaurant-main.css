@@ -10,7 +10,7 @@
   padding: 25px 22px 0 22px;
 }
 
-.title1 {
+h1 {
   display: flex;
   position: relative;
   font-family: Shrikhand;
@@ -28,10 +28,9 @@
 
 .card-coeur {
   position: absolute;
-  right: -40px;
-  top: 3px;
+  right: 56px;
+  top: 44px;
   font-size: 30px;
-  position: relative;
 }
 .card-coeur .fa-heart-empty {
   transition: opacity 250ms;
@@ -55,13 +54,14 @@
   left: 0;
   opacity: 0;
   transition: opacity 250ms;
+  cursor: pointer;
 }
 
 .menu-section {
   margin-top: 40px;
 }
 
-.title2 {
+h2 {
   text-transform: uppercase;
   font-size: 20px;
   border-bottom: 4px solid #99E2D0;
