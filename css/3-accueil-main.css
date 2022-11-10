@@ -4,6 +4,11 @@
   margin-top: 56px;
 }
 
+.title-breakpoint {
+  display: flex;
+  margin-left: 25px;
+}
+
 .card-restaurant {
   margin: 20px 20px;
   border-radius: 15px 15px 15px 15px;
