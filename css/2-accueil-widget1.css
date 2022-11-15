@@ -18,12 +18,20 @@
   padding: 5px 0;
 }
 
+.title1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 25px;
+  padding-top: 20px;
+}
+
 .titres-button {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 30px;
+  padding-top: 20px;
 }
 
 button {

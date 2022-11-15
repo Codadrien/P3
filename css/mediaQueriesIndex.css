@@ -19,4 +19,10 @@
   .restaurant {
     width: 25%;
   }
+  .title1 {
+    display: flex;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    margin-left: -10px;
+  }
 }/*# sourceMappingURL=mediaQueriesIndex.css.map */

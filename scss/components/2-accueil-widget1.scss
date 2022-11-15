@@ -24,12 +24,20 @@
 
 // Titres-button
 
+.title1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25px;
+    padding-top: 20px;
+}
+
 .titres-button {
     background-color: $grey;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 30px;
+    padding-top: 20px;
 }
 
 button {
